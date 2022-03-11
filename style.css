@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #2ecc71;
+}
+
+td {
+  width: 50px;
+  height: 50px;
+  border: 1.5px solid red;
+}
+
+.red {
+  background: url(./photo_2021-11-19_14-08-11.jpg);
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.green {
+  background: url(./photo_2021-11-19_14-11-06.jpg);
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.time {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: -100%;
+  left: 0;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.55);
+  color: #020202;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.time .card {
+  width: 180px;
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.685);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  border-radius: 30px;
+}
+
+.time .card h2 {
+  color: rgba(255, 0, 0, 0.897);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.time .card button {
+  margin-top: 20px;
+  width: 70px;
+  height: 40px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 20px;
+}
+
+.time.active {
+  top: 0;
+}
+/*# sourceMappingURL=style.css.map */
